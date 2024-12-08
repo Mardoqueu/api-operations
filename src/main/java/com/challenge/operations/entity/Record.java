@@ -5,6 +5,29 @@ import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+/**
+ * Represents a financial transaction record in the system.
+ *
+ * This class is used to store information about transactions
+ * associated with a particular user and operation. It includes
+ * details such as the transaction amount, user balance at the
+ * time of the transaction, the operation response, and the date
+ * when the transaction took place.
+ *
+ * It is a JPA entity that can be persisted to a database.
+ * Instances of this class are managed through a database
+ * using JPA annotations for objects relational mapping.
+ *
+ * Fields in this class include:
+ * - id: Unique identifier for each record.
+ * - user: The user associated with the record.
+ * - operation: The operation related to this record.
+ * - amount: The amount involved in the transaction.
+ * - userBalance: The balance of the user at the time of transaction.
+ * - operationResponse: The result response of the operation.
+ * - date: The date and time when the transaction occurred.
+ * - expression: An optional expression used in the transaction.
+ */
 @Entity
 public class Record {
 

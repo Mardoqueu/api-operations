@@ -12,6 +12,17 @@ import org.springframework.web.bind.annotation.*;
 import java.math.BigDecimal;
 import java.util.List;
 
+/**
+ * The OperationController class provides REST endpoints for executing mathematical operations,
+ * generating random strings, retrieving all user operations, and deleting specific operations.
+ * It interacts with OperationService and RecordService to perform these actions.
+ *
+ * Endpoints:
+ * 1. /api/operations/execute (POST): Executes a mathematical operation based on the provided expression and user ID.
+ * 2. /api/operations/random-string (POST): Generates a random string for the specified user ID.
+ * 3. /api/operations (GET): Retrieves all operation records for a specified user ID.
+ * 4. /api/operations/{id} (DELETE): Deletes an operation record by its ID.
+ */
 @RestController
 @RequestMapping("/api/operations")
 public class OperationController {

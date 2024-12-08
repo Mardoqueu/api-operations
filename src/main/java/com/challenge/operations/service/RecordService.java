@@ -14,6 +14,12 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * RecordService is responsible for managing financial transaction records in the system.
+ * It provides methods to save, retrieve, and delete transaction records associated with users and operations.
+ * This service interacts with the RecordRepository to perform database operations on Record entities.
+ * It also offers conversion utilities from Record entity to RecordDTO for data transfer purposes.
+ */
 @Service
 public class RecordService {
 

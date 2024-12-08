@@ -6,6 +6,19 @@ import java.util.EmptyStackException;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
+/**
+ * The ExpressionEvaluator class provides functionality for evaluating mathematical expressions
+ * using infix notation. It supports basic arithmetic operations such as addition, subtraction,
+ * multiplication, and division, as well as the square root function.
+ *
+ * Expressions are first converted into postfix notation (Reverse Polish Notation) using the
+ * Shunting-yard algorithm to manage operator precedence and associativity. The postfix expression
+ * is then evaluated to yield the final result.
+ *
+ * This class throws an InvalidExpressionException for various errors encountered during parsing
+ * and evaluation, including mismatched parentheses, consecutive operators, division by zero,
+ * invalid tokens, and incorrect expression structure.
+ */
 public class ExpressionEvaluator {
 
     // Defines the precedence of operators

@@ -15,6 +15,16 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Service class responsible for handling operations.
+ *
+ * This class is annotated with @Service to indicate that it's a service component in
+ * the application's service layer. It facilitates executing operations by interacting
+ * with user accounts and maintaining transaction records.
+ *
+ * Dependencies are injected via Spring's @Autowired, allowing access to
+ * UserService, RecordService, and OperationRepository.
+ */
 @Service
 public class OperationService {
 

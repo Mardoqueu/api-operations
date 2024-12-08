@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
 
+/**
+ * UserController is a REST controller that handles HTTP requests related to user accounts,
+ * specifically for managing user balances. It provides endpoints for adding balance to a user account
+ * and retrieving a user's balance.
+ */
 @RestController
 @RequestMapping("/api/users")
 public class UserController {

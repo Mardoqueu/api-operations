@@ -9,6 +9,13 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 
+/**
+ * UserService provides operations for managing user entities, specifically
+ * handling CRUD operations and managing user balances.
+ *
+ * This service interacts with the UserRepository to perform database
+ * operations related to User entities.
+ */
 @Service
 public class UserService {
 

@@ -3,6 +3,12 @@ package com.challenge.operations.dto;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+/**
+ * Data Transfer Object representing a financial record.
+ * This class is used to transfer data related to financial records
+ * between different layers of an application, such as between
+ * the database and the user interface.
+ */
 public class RecordDTO {
 
     private Long id;

@@ -7,6 +7,12 @@ import jakarta.persistence.Id;
 
 import java.math.BigDecimal;
 
+/**
+ * Represents an operation entity with a unique identifier, type, and cost.
+ *
+ * This class is used to model operations that may have varying types and costs.
+ * It is a JPA entity and instances of this class can be persisted to a database.
+ */
 @Entity
 public class Operation {
 

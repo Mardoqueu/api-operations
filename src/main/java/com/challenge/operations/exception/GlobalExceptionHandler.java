@@ -9,6 +9,12 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Global exception handler for handling various types of exceptions
+ * that may occur within the application. This class is annotated
+ * with @RestControllerAdvice, enabling centralized exception handling
+ * across all controllers.
+ */
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 

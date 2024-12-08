@@ -15,6 +15,29 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
 
+/**
+ * The JwtRequestFilter class extends the OncePerRequestFilter to execute
+ * filtering logic once per request within a Spring application. This filter
+ * intercepts incoming HTTP requests to extract and validate a JWT token from
+ * the Authorization header. If a valid token is found, it sets the authentication
+ * in the security context for further processing by the application.
+ *
+ * The filter primarily performs the following tasks:
+ *
+ * 1. Extracts the JWT token from the Authorization header of the HTTP request,
+ *    if present and prefixed with "Bearer ".
+ *
+ * 2. Utilizes the JwtUtil component to extract the username and validate the token.
+ *
+ * 3. Loads the user details using the CustomUserDetailsService based on the extracted
+ *    username.
+ *
+ * 4. If the token is valid, creates a UsernamePasswordAuthenticationToken and sets it
+ *    in the SecurityContextHolder to complete the authentication process.
+ *
+ * This class enables stateless authentication where each request can be validated
+ * independently, based on the JWT token it carries.
+ */
 @Component
 public class JwtRequestFilter extends OncePerRequestFilter {
 

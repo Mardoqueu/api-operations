@@ -11,6 +11,11 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 import java.util.List;
 
+/**
+ * The SecurityConfig class is a Spring configuration class for setting up security filters
+ * and configurations for the application. It configures CORS, CSRF protection, URL authorization,
+ * session management, and JWT authentication.
+ */
 @Configuration
 public class SecurityConfig {
 

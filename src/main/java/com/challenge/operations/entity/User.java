@@ -6,6 +6,12 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import java.math.BigDecimal;
 
+/**
+ * The User class represents a user entity with an identifier, username, password,
+ * and balance. It is annotated as a JPA entity to be persisted in the database.
+ *
+ * It contains basic getter and setter methods for each of the fields.
+ */
 @Entity
 public class User {
 

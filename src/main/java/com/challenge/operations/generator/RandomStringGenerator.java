@@ -2,6 +2,10 @@ package com.challenge.operations.generator;
 
 import java.security.SecureRandom;
 
+/**
+ * The RandomStringGenerator class is responsible for generating random strings
+ * composed of uppercase and lowercase letters, as well as numeric digits.
+ */
 public class RandomStringGenerator {
 
     private static final String CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
